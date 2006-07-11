@@ -1,0 +1,205 @@
+openexr
+------------------------------------------
+OpenEXR is a high dynamic-range (HDR) image file format developed by
+Industrial Light & Magic for use in computer imaging applications.
+
+LM has released OpenEXR as free software. The OpenEXR software
+distribution includes:
+
+ * IlmImf, a library that reads and writes OpenEXR images.
+ * Half, a C++ class for manipulating half values as if they were a
+   built-in C++ data type.
+ * Imath, a math library with support for matrices, 2d- and
+   3d-transformations, solvers for linear/quadratic/cubic equations, and
+   more.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  zlib-1.2.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://www.openexr.com/
+
+Canonical download:
+  http://savannah.nongnu.org/download/openexr/
+
+-------------------------------------------
+
+Build instructions:
+  unpack openexr-1.2.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./openexr-1.2.2-X.cygport all
+
+This will create:
+  /usr/src/openexr-1.2.2-X-src.tar.bz2
+  /usr/src/openexr-1.2.2-X.tar.bz2
+  /usr/src/openexr-devel-1.2.2-X.tar.bz2
+  /usr/src/libopenexr2-1.2.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/exrenvmap.exe
+  /usr/bin/exrheader.exe
+  /usr/bin/exrmakepreview.exe
+  /usr/bin/exrmaketiled.exe
+  /usr/bin/exrstdattr.exe
+  /usr/share/doc/Cygwin/openexr-1.2.2.README
+  /usr/share/doc/openexr-1.2.2/AUTHORS
+  /usr/share/doc/openexr-1.2.2/COPYING
+  /usr/share/doc/openexr-1.2.2/ChangeLog
+  /usr/share/doc/openexr-1.2.2/INSTALL
+  /usr/share/doc/openexr-1.2.2/LICENSE
+  /usr/share/doc/openexr-1.2.2/NEWS
+  /usr/share/doc/openexr-1.2.2/README
+  /usr/share/doc/openexr-1.2.2/examples/drawImage.cpp
+  /usr/share/doc/openexr-1.2.2/examples/drawImage.h
+  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceExamples.h
+  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceTiledExamples.h
+  /usr/share/doc/openexr-1.2.2/examples/lowLevelIoExamples.cpp
+  /usr/share/doc/openexr-1.2.2/examples/lowLevelIoExamples.h
+  /usr/share/doc/openexr-1.2.2/examples/main.cpp
+  /usr/share/doc/openexr-1.2.2/examples/previewImageExamples.cpp
+  /usr/share/doc/openexr-1.2.2/examples/previewImageExamples.h
+  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceExamples.h
+  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceTiledExamples.h
+
+Files included in the runtime library package:
+
+  /usr/bin/cygHalf-2.dll
+  /usr/bin/cygIex-2.dll
+  /usr/bin/cygIlmImf-2.dll
+  /usr/bin/cygImath-2.dll
+
+Files included in the development package:
+
+  /usr/include/OpenEXR/Iex.h
+  /usr/include/OpenEXR/IexBaseExc.h
+  /usr/include/OpenEXR/IexErrnoExc.h
+  /usr/include/OpenEXR/IexMacros.h
+  /usr/include/OpenEXR/IexMathExc.h
+  /usr/include/OpenEXR/IexThrowErrnoExc.h
+  /usr/include/OpenEXR/ImathBox.h
+  /usr/include/OpenEXR/ImathBoxAlgo.h
+  /usr/include/OpenEXR/ImathColor.h
+  /usr/include/OpenEXR/ImathColorAlgo.h
+  /usr/include/OpenEXR/ImathEuler.h
+  /usr/include/OpenEXR/ImathExc.h
+  /usr/include/OpenEXR/ImathFrame.h
+  /usr/include/OpenEXR/ImathFrustum.h
+  /usr/include/OpenEXR/ImathFun.h
+  /usr/include/OpenEXR/ImathGL.h
+  /usr/include/OpenEXR/ImathGLU.h
+  /usr/include/OpenEXR/ImathHalfLimits.h
+  /usr/include/OpenEXR/ImathInterval.h
+  /usr/include/OpenEXR/ImathLimits.h
+  /usr/include/OpenEXR/ImathLine.h
+  /usr/include/OpenEXR/ImathLineAlgo.h
+  /usr/include/OpenEXR/ImathMath.h
+  /usr/include/OpenEXR/ImathMatrix.h
+  /usr/include/OpenEXR/ImathMatrixAlgo.h
+  /usr/include/OpenEXR/ImathPlane.h
+  /usr/include/OpenEXR/ImathPlatform.h
+  /usr/include/OpenEXR/ImathQuat.h
+  /usr/include/OpenEXR/ImathRandom.h
+  /usr/include/OpenEXR/ImathRoots.h
+  /usr/include/OpenEXR/ImathShear.h
+  /usr/include/OpenEXR/ImathSphere.h
+  /usr/include/OpenEXR/ImathVec.h
+  /usr/include/OpenEXR/ImathVecAlgo.h
+  /usr/include/OpenEXR/ImfArray.h
+  /usr/include/OpenEXR/ImfAttribute.h
+  /usr/include/OpenEXR/ImfBoxAttribute.h
+  /usr/include/OpenEXR/ImfCRgbaFile.h
+  /usr/include/OpenEXR/ImfChannelList.h
+  /usr/include/OpenEXR/ImfChannelListAttribute.h
+  /usr/include/OpenEXR/ImfChromaticities.h
+  /usr/include/OpenEXR/ImfChromaticitiesAttribute.h
+  /usr/include/OpenEXR/ImfCompression.h
+  /usr/include/OpenEXR/ImfCompressionAttribute.h
+  /usr/include/OpenEXR/ImfConvert.h
+  /usr/include/OpenEXR/ImfDoubleAttribute.h
+  /usr/include/OpenEXR/ImfEnvmap.h
+  /usr/include/OpenEXR/ImfEnvmapAttribute.h
+  /usr/include/OpenEXR/ImfFloatAttribute.h
+  /usr/include/OpenEXR/ImfFrameBuffer.h
+  /usr/include/OpenEXR/ImfHeader.h
+  /usr/include/OpenEXR/ImfHuf.h
+  /usr/include/OpenEXR/ImfIO.h
+  /usr/include/OpenEXR/ImfInputFile.h
+  /usr/include/OpenEXR/ImfInt64.h
+  /usr/include/OpenEXR/ImfIntAttribute.h
+  /usr/include/OpenEXR/ImfKeyCode.h
+  /usr/include/OpenEXR/ImfKeyCodeAttribute.h
+  /usr/include/OpenEXR/ImfLineOrder.h
+  /usr/include/OpenEXR/ImfLineOrderAttribute.h
+  /usr/include/OpenEXR/ImfLut.h
+  /usr/include/OpenEXR/ImfMatrixAttribute.h
+  /usr/include/OpenEXR/ImfName.h
+  /usr/include/OpenEXR/ImfOpaqueAttribute.h
+  /usr/include/OpenEXR/ImfOutputFile.h
+  /usr/include/OpenEXR/ImfPixelType.h
+  /usr/include/OpenEXR/ImfPreviewImage.h
+  /usr/include/OpenEXR/ImfPreviewImageAttribute.h
+  /usr/include/OpenEXR/ImfRgba.h
+  /usr/include/OpenEXR/ImfRgbaFile.h
+  /usr/include/OpenEXR/ImfRgbaYca.h
+  /usr/include/OpenEXR/ImfStandardAttributes.h
+  /usr/include/OpenEXR/ImfStringAttribute.h
+  /usr/include/OpenEXR/ImfTestFile.h
+  /usr/include/OpenEXR/ImfTileDescription.h
+  /usr/include/OpenEXR/ImfTileDescriptionAttribute.h
+  /usr/include/OpenEXR/ImfTiledInputFile.h
+  /usr/include/OpenEXR/ImfTiledOutputFile.h
+  /usr/include/OpenEXR/ImfTiledRgbaFile.h
+  /usr/include/OpenEXR/ImfTimeCode.h
+  /usr/include/OpenEXR/ImfTimeCodeAttribute.h
+  /usr/include/OpenEXR/ImfVecAttribute.h
+  /usr/include/OpenEXR/ImfVersion.h
+  /usr/include/OpenEXR/ImfWav.h
+  /usr/include/OpenEXR/ImfXdr.h
+  /usr/include/OpenEXR/half.h
+  /usr/include/OpenEXR/halfFunction.h
+  /usr/include/OpenEXR/halfLimits.h
+  /usr/lib/libHalf.dll.a
+  /usr/lib/libHalf.la
+  /usr/lib/libIex.dll.a
+  /usr/lib/libIex.la
+  /usr/lib/libIlmImf.dll.a
+  /usr/lib/libIlmImf.la
+  /usr/lib/libImath.dll.a
+  /usr/lib/libImath.la
+  /usr/lib/pkgconfig/OpenEXR.pc
+  /usr/share/aclocal/openexr.m4
+
+------------------
+
+Port Notes:
+
+----- version 1.2.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
