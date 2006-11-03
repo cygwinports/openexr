@@ -14,21 +14,21 @@ distribution includes:
    more.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-2
   zlib-1.2.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   gcc-g++-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
   sed-4.1.5-1
 
 Canonical website:
@@ -49,8 +49,8 @@ Build instructions:
 This will create:
   /usr/src/openexr-1.2.2-X-src.tar.bz2
   /usr/src/openexr-1.2.2-X.tar.bz2
-  /usr/src/openexr-devel-1.2.2-X.tar.bz2
-  /usr/src/libopenexr2-1.2.2-X.tar.bz2
+  /usr/src/libopenexr-devel-1.2.2-X.tar.bz2
+  /usr/src/libopenexr4-1.2.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,45 +61,48 @@ Files included in the binary package:
   /usr/bin/exrmakepreview.exe
   /usr/bin/exrmaketiled.exe
   /usr/bin/exrstdattr.exe
-  /usr/share/doc/Cygwin/openexr-1.2.2.README
-  /usr/share/doc/openexr-1.2.2/AUTHORS
-  /usr/share/doc/openexr-1.2.2/COPYING
-  /usr/share/doc/openexr-1.2.2/ChangeLog
-  /usr/share/doc/openexr-1.2.2/INSTALL
-  /usr/share/doc/openexr-1.2.2/LICENSE
-  /usr/share/doc/openexr-1.2.2/NEWS
-  /usr/share/doc/openexr-1.2.2/README
-  /usr/share/doc/openexr-1.2.2/examples/drawImage.cpp
-  /usr/share/doc/openexr-1.2.2/examples/drawImage.h
-  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceExamples.h
-  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.2.2/examples/generalInterfaceTiledExamples.h
-  /usr/share/doc/openexr-1.2.2/examples/lowLevelIoExamples.cpp
-  /usr/share/doc/openexr-1.2.2/examples/lowLevelIoExamples.h
-  /usr/share/doc/openexr-1.2.2/examples/main.cpp
-  /usr/share/doc/openexr-1.2.2/examples/previewImageExamples.cpp
-  /usr/share/doc/openexr-1.2.2/examples/previewImageExamples.h
-  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceExamples.h
-  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.2.2/examples/rgbaInterfaceTiledExamples.h
+  /usr/share/doc/Cygwin/openexr-1.4.0a.README
+  /usr/share/doc/openexr-1.4.0a/AUTHORS
+  /usr/share/doc/openexr-1.4.0a/COPYING
+  /usr/share/doc/openexr-1.4.0a/ChangeLog
+  /usr/share/doc/openexr-1.4.0a/INSTALL
+  /usr/share/doc/openexr-1.4.0a/LICENSE
+  /usr/share/doc/openexr-1.4.0a/NEWS
+  /usr/share/doc/openexr-1.4.0a/README
+  /usr/share/doc/openexr-1.4.0a/examples/drawImage.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/drawImage.h
+  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceExamples.h
+  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceTiledExamples.h
+  /usr/share/doc/openexr-1.4.0a/examples/lowLevelIoExamples.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/lowLevelIoExamples.h
+  /usr/share/doc/openexr-1.4.0a/examples/main.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/previewImageExamples.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/previewImageExamples.h
+  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceExamples.h
+  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceTiledExamples.h
 
-Files included in the runtime library package:
+(libopenexr4)
+  /usr/bin/cygHalf-4.dll
+  /usr/bin/cygIex-4.dll
+  /usr/bin/cygIlmImf-4.dll
+  /usr/bin/cygIlmThread-4.dll
+  /usr/bin/cygImath-4.dll
 
-  /usr/bin/cygHalf-2.dll
-  /usr/bin/cygIex-2.dll
-  /usr/bin/cygIlmImf-2.dll
-  /usr/bin/cygImath-2.dll
-
-Files included in the development package:
-
+(libopenexr-devel)
   /usr/include/OpenEXR/Iex.h
   /usr/include/OpenEXR/IexBaseExc.h
   /usr/include/OpenEXR/IexErrnoExc.h
   /usr/include/OpenEXR/IexMacros.h
   /usr/include/OpenEXR/IexMathExc.h
   /usr/include/OpenEXR/IexThrowErrnoExc.h
+  /usr/include/OpenEXR/IlmThread.h
+  /usr/include/OpenEXR/IlmThreadMutex.h
+  /usr/include/OpenEXR/IlmThreadPool.h
+  /usr/include/OpenEXR/IlmThreadSemaphore.h
   /usr/include/OpenEXR/ImathBox.h
   /usr/include/OpenEXR/ImathBoxAlgo.h
   /usr/include/OpenEXR/ImathColor.h
@@ -168,6 +171,7 @@ Files included in the development package:
   /usr/include/OpenEXR/ImfStandardAttributes.h
   /usr/include/OpenEXR/ImfStringAttribute.h
   /usr/include/OpenEXR/ImfTestFile.h
+  /usr/include/OpenEXR/ImfThreading.h
   /usr/include/OpenEXR/ImfTileDescription.h
   /usr/include/OpenEXR/ImfTileDescriptionAttribute.h
   /usr/include/OpenEXR/ImfTiledInputFile.h
@@ -179,6 +183,7 @@ Files included in the development package:
   /usr/include/OpenEXR/ImfVersion.h
   /usr/include/OpenEXR/ImfWav.h
   /usr/include/OpenEXR/ImfXdr.h
+  /usr/include/OpenEXR/OpenEXRConfig.h
   /usr/include/OpenEXR/half.h
   /usr/include/OpenEXR/halfFunction.h
   /usr/include/OpenEXR/halfLimits.h
@@ -188,6 +193,8 @@ Files included in the development package:
   /usr/lib/libIex.la
   /usr/lib/libIlmImf.dll.a
   /usr/lib/libIlmImf.la
+  /usr/lib/libIlmThread.dll.a
+  /usr/lib/libIlmThread.la
   /usr/lib/libImath.dll.a
   /usr/lib/libImath.la
   /usr/lib/pkgconfig/OpenEXR.pc
@@ -196,6 +203,9 @@ Files included in the development package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.0a-1 -----
+Version and ABI bump.
 
 ----- version 1.2.2-1 -----
 Initial release for Cygwin.
