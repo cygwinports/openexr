@@ -14,22 +14,24 @@ distribution includes:
    more.
 
 Runtime requirements:
-  cygwin-1.5.21-2
-  zlib-1.2.3-1
+  cygwin-1.5.24-2
+  libilmbase6-1.0.0-1
+  zlib-1.2.3-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-2
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  libtool1.5-1.5.23a-1
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.openexr.com/
@@ -40,99 +42,61 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack openexr-1.2.2-X-src.tar.bz2
+  unpack openexr-1.6.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./openexr-1.2.2-X.cygport all
+  cygport ./openexr-1.6.0-X.cygport all
 
 This will create:
-  /usr/src/openexr-1.2.2-X-src.tar.bz2
-  /usr/src/openexr-1.2.2-X.tar.bz2
-  /usr/src/libopenexr-devel-1.2.2-X.tar.bz2
-  /usr/src/libopenexr4-1.2.2-X.tar.bz2
+  /usr/src/openexr-1.6.0-X-src.tar.bz2
+  /usr/src/openexr-1.6.0-X.tar.bz2
+  /usr/src/libopenexr-devel-1.6.0-X.tar.bz2
+  /usr/src/libopenexr6-1.6.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
   /usr/bin/exrenvmap.exe
   /usr/bin/exrheader.exe
   /usr/bin/exrmakepreview.exe
   /usr/bin/exrmaketiled.exe
   /usr/bin/exrstdattr.exe
-  /usr/share/doc/Cygwin/openexr-1.4.0a.README
-  /usr/share/doc/openexr-1.4.0a/AUTHORS
-  /usr/share/doc/openexr-1.4.0a/COPYING
-  /usr/share/doc/openexr-1.4.0a/ChangeLog
-  /usr/share/doc/openexr-1.4.0a/INSTALL
-  /usr/share/doc/openexr-1.4.0a/LICENSE
-  /usr/share/doc/openexr-1.4.0a/NEWS
-  /usr/share/doc/openexr-1.4.0a/README
-  /usr/share/doc/openexr-1.4.0a/examples/drawImage.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/drawImage.h
-  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceExamples.h
-  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/generalInterfaceTiledExamples.h
-  /usr/share/doc/openexr-1.4.0a/examples/lowLevelIoExamples.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/lowLevelIoExamples.h
-  /usr/share/doc/openexr-1.4.0a/examples/main.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/previewImageExamples.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/previewImageExamples.h
-  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceExamples.h
-  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.4.0a/examples/rgbaInterfaceTiledExamples.h
+  /usr/share/doc/Cygwin/openexr-1.6.0.README
+  /usr/share/doc/openexr-1.6.0/AUTHORS
+  /usr/share/doc/openexr-1.6.0/COPYING
+  /usr/share/doc/openexr-1.6.0/ChangeLog
+  /usr/share/doc/openexr-1.6.0/INSTALL
+  /usr/share/doc/openexr-1.6.0/LICENSE
+  /usr/share/doc/openexr-1.6.0/NEWS
+  /usr/share/doc/openexr-1.6.0/OpenEXRFileLayout.pdf
+  /usr/share/doc/openexr-1.6.0/README
+  /usr/share/doc/openexr-1.6.0/ReadingAndWritingImageFiles.pdf
+  /usr/share/doc/openexr-1.6.0/TechnicalIntroduction.pdf
+  /usr/share/doc/openexr-1.6.0/examples/drawImage.cpp
+  /usr/share/doc/openexr-1.6.0/examples/drawImage.h
+  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceExamples.h
+  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceTiledExamples.h
+  /usr/share/doc/openexr-1.6.0/examples/lowLevelIoExamples.cpp
+  /usr/share/doc/openexr-1.6.0/examples/lowLevelIoExamples.h
+  /usr/share/doc/openexr-1.6.0/examples/main.cpp
+  /usr/share/doc/openexr-1.6.0/examples/previewImageExamples.cpp
+  /usr/share/doc/openexr-1.6.0/examples/previewImageExamples.h
+  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceExamples.h
+  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceTiledExamples.h
 
-(libopenexr4)
-  /usr/bin/cygHalf-4.dll
-  /usr/bin/cygIex-4.dll
-  /usr/bin/cygIlmImf-4.dll
-  /usr/bin/cygIlmThread-4.dll
-  /usr/bin/cygImath-4.dll
+(libopenexr6)
+  /usr/bin/cygIlmImf-6.dll
 
 (libopenexr-devel)
-  /usr/include/OpenEXR/Iex.h
-  /usr/include/OpenEXR/IexBaseExc.h
-  /usr/include/OpenEXR/IexErrnoExc.h
-  /usr/include/OpenEXR/IexMacros.h
-  /usr/include/OpenEXR/IexMathExc.h
-  /usr/include/OpenEXR/IexThrowErrnoExc.h
-  /usr/include/OpenEXR/IlmThread.h
-  /usr/include/OpenEXR/IlmThreadMutex.h
-  /usr/include/OpenEXR/IlmThreadPool.h
-  /usr/include/OpenEXR/IlmThreadSemaphore.h
-  /usr/include/OpenEXR/ImathBox.h
-  /usr/include/OpenEXR/ImathBoxAlgo.h
-  /usr/include/OpenEXR/ImathColor.h
-  /usr/include/OpenEXR/ImathColorAlgo.h
-  /usr/include/OpenEXR/ImathEuler.h
-  /usr/include/OpenEXR/ImathExc.h
-  /usr/include/OpenEXR/ImathFrame.h
-  /usr/include/OpenEXR/ImathFrustum.h
-  /usr/include/OpenEXR/ImathFun.h
-  /usr/include/OpenEXR/ImathGL.h
-  /usr/include/OpenEXR/ImathGLU.h
-  /usr/include/OpenEXR/ImathHalfLimits.h
-  /usr/include/OpenEXR/ImathInterval.h
-  /usr/include/OpenEXR/ImathLimits.h
-  /usr/include/OpenEXR/ImathLine.h
-  /usr/include/OpenEXR/ImathLineAlgo.h
-  /usr/include/OpenEXR/ImathMath.h
-  /usr/include/OpenEXR/ImathMatrix.h
-  /usr/include/OpenEXR/ImathMatrixAlgo.h
-  /usr/include/OpenEXR/ImathPlane.h
-  /usr/include/OpenEXR/ImathPlatform.h
-  /usr/include/OpenEXR/ImathQuat.h
-  /usr/include/OpenEXR/ImathRandom.h
-  /usr/include/OpenEXR/ImathRoots.h
-  /usr/include/OpenEXR/ImathShear.h
-  /usr/include/OpenEXR/ImathSphere.h
-  /usr/include/OpenEXR/ImathVec.h
-  /usr/include/OpenEXR/ImathVecAlgo.h
   /usr/include/OpenEXR/ImfArray.h
   /usr/include/OpenEXR/ImfAttribute.h
+  /usr/include/OpenEXR/ImfB44Compressor.h
   /usr/include/OpenEXR/ImfBoxAttribute.h
   /usr/include/OpenEXR/ImfCRgbaFile.h
   /usr/include/OpenEXR/ImfChannelList.h
@@ -147,6 +111,7 @@ Files included in the binary package:
   /usr/include/OpenEXR/ImfEnvmapAttribute.h
   /usr/include/OpenEXR/ImfFloatAttribute.h
   /usr/include/OpenEXR/ImfFrameBuffer.h
+  /usr/include/OpenEXR/ImfFramesPerSecond.h
   /usr/include/OpenEXR/ImfHeader.h
   /usr/include/OpenEXR/ImfHuf.h
   /usr/include/OpenEXR/ImfIO.h
@@ -165,6 +130,8 @@ Files included in the binary package:
   /usr/include/OpenEXR/ImfPixelType.h
   /usr/include/OpenEXR/ImfPreviewImage.h
   /usr/include/OpenEXR/ImfPreviewImageAttribute.h
+  /usr/include/OpenEXR/ImfRational.h
+  /usr/include/OpenEXR/ImfRationalAttribute.h
   /usr/include/OpenEXR/ImfRgba.h
   /usr/include/OpenEXR/ImfRgbaFile.h
   /usr/include/OpenEXR/ImfRgbaYca.h
@@ -184,25 +151,19 @@ Files included in the binary package:
   /usr/include/OpenEXR/ImfWav.h
   /usr/include/OpenEXR/ImfXdr.h
   /usr/include/OpenEXR/OpenEXRConfig.h
-  /usr/include/OpenEXR/half.h
-  /usr/include/OpenEXR/halfFunction.h
-  /usr/include/OpenEXR/halfLimits.h
-  /usr/lib/libHalf.dll.a
-  /usr/lib/libHalf.la
-  /usr/lib/libIex.dll.a
-  /usr/lib/libIex.la
+  /usr/lib/libIlmImf.a
   /usr/lib/libIlmImf.dll.a
   /usr/lib/libIlmImf.la
-  /usr/lib/libIlmThread.dll.a
-  /usr/lib/libIlmThread.la
-  /usr/lib/libImath.dll.a
-  /usr/lib/libImath.la
   /usr/lib/pkgconfig/OpenEXR.pc
   /usr/share/aclocal/openexr.m4
 
 ------------------
 
 Port Notes:
+
+----- version 1.6.0-1 -----
+Version and ABI bump.
+Non-graphics-related libraries provided by ilmbase.
 
 ----- version 1.4.0a-1 -----
 Version and ABI bump.

@@ -1,5 +1,5 @@
 category: Graphics Libs
-requires: cygwin zlib
+requires: cygwin libilmbase-devel zlib
 external-source: openexr
 sdesc: "High dynamic-range image format (development)"
 ldesc: "OpenEXR is a high dynamic-range (HDR) image file format developed by
