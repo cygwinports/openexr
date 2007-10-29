@@ -15,7 +15,7 @@ distribution includes:
 
 Runtime requirements:
   cygwin-1.5.24-2
-  libilmbase6-1.0.0-1
+  libilmbase6-1.0.1-1
   zlib-1.2.3-2
 
 Build requirements:
@@ -24,7 +24,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.6-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -42,17 +42,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack openexr-1.6.0-X-src.tar.bz2
+  unpack openexr-1.6.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./openexr-1.6.0-X.cygport all
+  cygport ./openexr-1.6.1-X.cygport all
 
 This will create:
-  /usr/src/openexr-1.6.0-X-src.tar.bz2
-  /usr/src/openexr-1.6.0-X.tar.bz2
-  /usr/src/libopenexr-devel-1.6.0-X.tar.bz2
-  /usr/src/libopenexr6-1.6.0-X.tar.bz2
+  /usr/src/openexr-1.6.1-X-src.tar.bz2
+  /usr/src/openexr-1.6.1-X.tar.bz2
+  /usr/src/libopenexr-devel-1.6.1-X.tar.bz2
+  /usr/src/libopenexr6-1.6.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -63,32 +63,32 @@ Files included in the binary packages:
   /usr/bin/exrmakepreview.exe
   /usr/bin/exrmaketiled.exe
   /usr/bin/exrstdattr.exe
-  /usr/share/doc/Cygwin/openexr-1.6.0.README
-  /usr/share/doc/openexr-1.6.0/AUTHORS
-  /usr/share/doc/openexr-1.6.0/COPYING
-  /usr/share/doc/openexr-1.6.0/ChangeLog
-  /usr/share/doc/openexr-1.6.0/INSTALL
-  /usr/share/doc/openexr-1.6.0/LICENSE
-  /usr/share/doc/openexr-1.6.0/NEWS
-  /usr/share/doc/openexr-1.6.0/OpenEXRFileLayout.pdf
-  /usr/share/doc/openexr-1.6.0/README
-  /usr/share/doc/openexr-1.6.0/ReadingAndWritingImageFiles.pdf
-  /usr/share/doc/openexr-1.6.0/TechnicalIntroduction.pdf
-  /usr/share/doc/openexr-1.6.0/examples/drawImage.cpp
-  /usr/share/doc/openexr-1.6.0/examples/drawImage.h
-  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceExamples.h
-  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.6.0/examples/generalInterfaceTiledExamples.h
-  /usr/share/doc/openexr-1.6.0/examples/lowLevelIoExamples.cpp
-  /usr/share/doc/openexr-1.6.0/examples/lowLevelIoExamples.h
-  /usr/share/doc/openexr-1.6.0/examples/main.cpp
-  /usr/share/doc/openexr-1.6.0/examples/previewImageExamples.cpp
-  /usr/share/doc/openexr-1.6.0/examples/previewImageExamples.h
-  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceExamples.h
-  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.6.0/examples/rgbaInterfaceTiledExamples.h
+  /usr/share/doc/Cygwin/openexr-1.6.1.README
+  /usr/share/doc/openexr-1.6.1/AUTHORS
+  /usr/share/doc/openexr-1.6.1/COPYING
+  /usr/share/doc/openexr-1.6.1/ChangeLog
+  /usr/share/doc/openexr-1.6.1/INSTALL
+  /usr/share/doc/openexr-1.6.1/LICENSE
+  /usr/share/doc/openexr-1.6.1/NEWS
+  /usr/share/doc/openexr-1.6.1/OpenEXRFileLayout.pdf
+  /usr/share/doc/openexr-1.6.1/README
+  /usr/share/doc/openexr-1.6.1/ReadingAndWritingImageFiles.pdf
+  /usr/share/doc/openexr-1.6.1/TechnicalIntroduction.pdf
+  /usr/share/doc/openexr-1.6.1/examples/drawImage.cpp
+  /usr/share/doc/openexr-1.6.1/examples/drawImage.h
+  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceExamples.h
+  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceTiledExamples.h
+  /usr/share/doc/openexr-1.6.1/examples/lowLevelIoExamples.cpp
+  /usr/share/doc/openexr-1.6.1/examples/lowLevelIoExamples.h
+  /usr/share/doc/openexr-1.6.1/examples/main.cpp
+  /usr/share/doc/openexr-1.6.1/examples/previewImageExamples.cpp
+  /usr/share/doc/openexr-1.6.1/examples/previewImageExamples.h
+  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceExamples.cpp
+  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceExamples.h
+  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceTiledExamples.h
 
 (libopenexr6)
   /usr/bin/cygIlmImf-6.dll
@@ -160,6 +160,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.6.1-1 -----
+Version bump.
 
 ----- version 1.6.0-1 -----
 Version and ABI bump.
