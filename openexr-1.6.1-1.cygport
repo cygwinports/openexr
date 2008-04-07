@@ -12,7 +12,6 @@ PKG_CONTENTS[2]='usr/include/ usr/lib/ usr/share/aclocal/'
 DIFF_EXCLUDES="OpenEXRConfig.h"
 
 NO_AUTOHEADER=1
-CYGCONF_ARGS="--without-fltk-config"
 
 src_install() {
 	cd ${B}
