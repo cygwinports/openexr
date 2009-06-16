@@ -14,23 +14,24 @@ distribution includes:
    more.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libilmbase6-1.0.1-1
-  zlib-1.2.3-2
+  cygwin-1.7.0-48
+  libgcc1-4.3.2-2
+  libilmbase6-1.0.1-10
+  libstdc++6-4.3.2-2
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.6-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -49,10 +50,10 @@ Build instructions:
   cygport ./openexr-1.6.1-X.cygport all
 
 This will create:
-  /usr/src/openexr-1.6.1-X-src.tar.bz2
-  /usr/src/openexr-1.6.1-X.tar.bz2
   /usr/src/libopenexr-devel-1.6.1-X.tar.bz2
   /usr/src/libopenexr6-1.6.1-X.tar.bz2
+  /usr/src/openexr-1.6.1-X-src.tar.bz2
+  /usr/src/openexr-1.6.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -63,32 +64,30 @@ Files included in the binary packages:
   /usr/bin/exrmakepreview.exe
   /usr/bin/exrmaketiled.exe
   /usr/bin/exrstdattr.exe
-  /usr/share/doc/Cygwin/openexr-1.6.1.README
-  /usr/share/doc/openexr-1.6.1/AUTHORS
-  /usr/share/doc/openexr-1.6.1/COPYING
-  /usr/share/doc/openexr-1.6.1/ChangeLog
-  /usr/share/doc/openexr-1.6.1/INSTALL
-  /usr/share/doc/openexr-1.6.1/LICENSE
-  /usr/share/doc/openexr-1.6.1/NEWS
-  /usr/share/doc/openexr-1.6.1/OpenEXRFileLayout.pdf
-  /usr/share/doc/openexr-1.6.1/README
-  /usr/share/doc/openexr-1.6.1/ReadingAndWritingImageFiles.pdf
-  /usr/share/doc/openexr-1.6.1/TechnicalIntroduction.pdf
-  /usr/share/doc/openexr-1.6.1/examples/drawImage.cpp
-  /usr/share/doc/openexr-1.6.1/examples/drawImage.h
-  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceExamples.h
-  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.6.1/examples/generalInterfaceTiledExamples.h
-  /usr/share/doc/openexr-1.6.1/examples/lowLevelIoExamples.cpp
-  /usr/share/doc/openexr-1.6.1/examples/lowLevelIoExamples.h
-  /usr/share/doc/openexr-1.6.1/examples/main.cpp
-  /usr/share/doc/openexr-1.6.1/examples/previewImageExamples.cpp
-  /usr/share/doc/openexr-1.6.1/examples/previewImageExamples.h
-  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceExamples.cpp
-  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceExamples.h
-  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceTiledExamples.cpp
-  /usr/share/doc/openexr-1.6.1/examples/rgbaInterfaceTiledExamples.h
+  /usr/share/doc/openexr/AUTHORS
+  /usr/share/doc/openexr/COPYING
+  /usr/share/doc/openexr/ChangeLog
+  /usr/share/doc/openexr/LICENSE
+  /usr/share/doc/openexr/NEWS
+  /usr/share/doc/openexr/OpenEXRFileLayout.pdf
+  /usr/share/doc/openexr/README
+  /usr/share/doc/openexr/ReadingAndWritingImageFiles.pdf
+  /usr/share/doc/openexr/TechnicalIntroduction.pdf
+  /usr/share/doc/openexr/examples/drawImage.cpp
+  /usr/share/doc/openexr/examples/drawImage.h
+  /usr/share/doc/openexr/examples/generalInterfaceExamples.cpp
+  /usr/share/doc/openexr/examples/generalInterfaceExamples.h
+  /usr/share/doc/openexr/examples/generalInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr/examples/generalInterfaceTiledExamples.h
+  /usr/share/doc/openexr/examples/lowLevelIoExamples.cpp
+  /usr/share/doc/openexr/examples/lowLevelIoExamples.h
+  /usr/share/doc/openexr/examples/main.cpp
+  /usr/share/doc/openexr/examples/previewImageExamples.cpp
+  /usr/share/doc/openexr/examples/previewImageExamples.h
+  /usr/share/doc/openexr/examples/rgbaInterfaceExamples.cpp
+  /usr/share/doc/openexr/examples/rgbaInterfaceExamples.h
+  /usr/share/doc/openexr/examples/rgbaInterfaceTiledExamples.cpp
+  /usr/share/doc/openexr/examples/rgbaInterfaceTiledExamples.h
 
 (libopenexr6)
   /usr/bin/cygIlmImf-6.dll
@@ -161,18 +160,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.6.1-1 -----
-Version bump.
-
------ version 1.6.0-1 -----
-Version and ABI bump.
-Non-graphics-related libraries provided by ilmbase.
-
------ version 1.4.0a-1 -----
-Version and ABI bump.
-
------ version 1.2.2-1 -----
-Initial release for Cygwin.
+----- version 1.6.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

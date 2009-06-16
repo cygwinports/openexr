@@ -1,0 +1,23 @@
+DESCRIPTION="High dynamic-range image format libraries and utilities"
+HOMEPAGE="http://www.openexr.com/"
+SRC_URI="http://savannah.nongnu.org/download/openexr/${P}.tar.gz"
+SRC_DIR="${P%[a-z]}"
+
+PATCH_URI="1.6.1-parallel-make.patch
+           1.6.1-gcc43.patch"
+
+PKG_NAMES="${PN} lib${PN}6 lib${PN}-devel"
+openexr_CONTENTS='usr/bin/*.exe usr/share/doc/'
+libopenexr6_CONTENTS="usr/bin/*-6.dll"
+libopenexr_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/'
+
+DIFF_EXCLUDES="OpenEXRConfig.h"
+
+NO_AUTOHEADER=1
+
+src_install() {
+	cd ${B}
+	cyginstall \
+		docdir=/usr/share/doc/${PN} \
+		examplesdir=/usr/share/doc/${PN}/examples
+}

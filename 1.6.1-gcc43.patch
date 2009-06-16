@@ -1,0 +1,21 @@
+--- origsrc/openexr-1.6.1/exrenvmap/main.cpp	2007-04-24 20:07:51.000000000 -0500
++++ src/openexr-1.6.1/exrenvmap/main.cpp	2009-03-27 18:35:21.543000000 -0500
+@@ -42,6 +42,7 @@
+ #include <makeCubeMap.h>
+ #include <makeLatLongMap.h>
+ #include <ImfEnvmap.h>
++#include <cstring>
+ #include <iostream>
+ #include <exception>
+ #include <stdlib.h>
+--- origsrc/openexr-1.6.1/exrmaketiled/main.cpp	2007-04-24 20:08:45.000000000 -0500
++++ src/openexr-1.6.1/exrmaketiled/main.cpp	2009-03-27 18:31:45.480500000 -0500
+@@ -44,7 +44,7 @@
+ 
+ #include <iostream>
+ #include <exception>
+-#include <string>
++#include <cstring>
+ #include <stdlib.h>
+ 
+ using namespace Imf;
