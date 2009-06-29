@@ -1,5 +1,5 @@
 category: Graphics
-requires: cygwin libgcc1 libilmbase6 libopenexr6 libstdc++6
+requires: libgcc1 libilmbase6 libopenexr6 libstdc++6
 sdesc: "High dynamic-range image format (utilities)"
 ldesc: "OpenEXR is a high dynamic-range (HDR) image file format developed by
 Industrial Light & Magic for use in computer imaging applications.
