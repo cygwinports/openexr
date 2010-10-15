@@ -1,0 +1,10 @@
+--- origsrc/openexr-1.7.0/exrenvmap/blurImage.cpp	2009-02-25 17:39:27.000000000 -0600
++++ src/openexr-1.7.0/exrenvmap/blurImage.cpp	2010-10-14 01:00:30.602041600 -0500
+@@ -45,6 +45,7 @@
+ #include "Iex.h"
+ #include <iostream>
+ #include <algorithm>
++#include <cstring>
+ 
+ using namespace std;
+ using namespace Imf;
