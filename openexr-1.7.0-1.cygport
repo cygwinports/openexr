@@ -6,10 +6,10 @@ SRC_DIR="${P%[a-z]}"
 PATCH_URI="1.6.1-parallel-make.patch
            1.7.0-gcc43.patch"
 
-PKG_NAMES="${PN} lib${PN}6 lib${PN}-devel"
+PKG_NAMES="${PN} libIlmImf6 libIlmImf-devel"
 openexr_CONTENTS='usr/bin/*.exe usr/share/doc/'
-libopenexr6_CONTENTS="usr/bin/*-6.dll"
-libopenexr_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/'
+libIlmImf6_CONTENTS="usr/bin/cygIlmImf-6.dll"
+libIlmImf_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/'
 
 DIFF_EXCLUDES="OpenEXRConfig.h"
 
