@@ -1,0 +1,31 @@
+NAME="openexr"
+VERSION=1.7.1
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="High dynamic-range image format"
+DESCRIPTION="OpenEXR is a high dynamic-range (HDR) image file format developed
+by Industrial Light & Magic for use in computer imaging applications."
+HOMEPAGE="http://www.openexr.com/"
+SRC_URI="https://github.com/downloads/openexr/openexr/openexr-${VERSION}.tar.gz"
+PATCH_URI="
+	1.6.1-parallel-make.patch
+	1.7.1-gcc47.patch
+"
+
+PKG_NAMES="${NAME} libIlmImf7 libIlmImf-devel"
+openexr_CONTENTS='usr/bin/*.exe usr/share/doc/'
+libIlmImf7_CATEGORY="Libs"
+libIlmImf7_CONTENTS="usr/bin/cygIlmImf-7.dll"
+libIlmImf_devel_CATEGORY="Libs"
+libIlmImf_devel_CONTENTS='usr/include/ usr/lib/ usr/share/aclocal/'
+
+DIFF_EXCLUDES="OpenEXRConfig.h"
+
+NO_AUTOHEADER=1
+
+src_install() {
+	cd ${B}
+	cyginstall \
+		docdir=/usr/share/doc/${NAME} \
+		examplesdir=/usr/share/doc/${NAME}/examples
+}
